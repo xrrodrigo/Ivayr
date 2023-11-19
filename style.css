@@ -56,7 +56,23 @@ flex-direction: column;
 {
 width: 100px;
 }
-.cloud
+.delete
 {
-width: 44px;
+    border: 1px dashed #FE2D2D;
+    background: none;
+    width: 125px;
+    height: 125px;
+    border-radius: 12px;
+    color: #FE2D2D;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+.delete:hover
+{
+cursor: pointer;
 }
