@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*
+{
+font-family: sans-serif;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+aside
+{
+float: left;
+background: #fff;
+width: 315px;
+height: 100%;
+position: fixed;
+display: flex;
+align-items: center;
+flex-direction: column;
+color: #949494;
+font-weight: 600;
+border-right: 1px solid #949494;
+padding-top: 30px;
+}
+input[type="file"]
+{
+display: none;
+}
+label
+{
+margin-top: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 250px;
+height: 150px;
+border: 1px #949494 dashed;
+border-radius: 12px;
+}
+label:hover
+{
+cursor: pointer;
+}
+.preview
+{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.logo
+{
+width: 100px;
+}

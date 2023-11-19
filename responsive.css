@@ -1,0 +1,24 @@
+@media (width < 480px){
+    aside{
+        width: 95px;
+    }
+    label{
+    border: solid 1px #949494;
+    width: 75px;
+    height: 75px;
+    }
+    .desc{
+        display: none;
+    }
+    .cloud{
+        width: 40px;
+    }
+    .logo
+    {
+    width: 60px;
+    }
+    .title
+    {
+    font-size: 16px;
+    }
+}
