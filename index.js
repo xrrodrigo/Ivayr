@@ -8,7 +8,6 @@ avatarImage.addEventListener('change', event => {
     
     const previewImage = document.createElement('img');
   previewImage.id = 'preview-image';
-  previewImage.class = 'teste';
   previewImage.width = 270;
   previewImage.height = 480;
   previewImage.src = event.target.result;
