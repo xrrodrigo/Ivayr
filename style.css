@@ -11,10 +11,11 @@ bottom: 0;
 }
 aside
 {
+margin-top: 20px;
+margin-bottom: 20px;
 float: left;
 background: #fff;
 width: 315px;
-height: 100%;
 position: fixed;
 display: flex;
 align-items: center;
