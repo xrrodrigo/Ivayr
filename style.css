@@ -75,11 +75,7 @@ width: 100px;
 {
 cursor: pointer;
 }
-.cloud
+.disable
 {
-width: 44px;
-}
-.trash
-{
-width: 44px;
+display: none;
 }

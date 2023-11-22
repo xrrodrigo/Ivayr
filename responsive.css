@@ -25,5 +25,10 @@
     {
         width: 75px;
         height: 75px;
+        border: solid 1px #FE2D2D;
+    }
+    .preview
+    {
+        padding-left: 95px;
     }
 }

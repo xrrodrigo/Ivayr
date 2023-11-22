@@ -1,24 +1,9 @@
-const avatarImage = document.querySelector('#arquivo');
-const h2Avatar = document.querySelector('#h2-avatar');
+function download() {
+  const canvas = document.getElementById("canvas");
+  const imgData = canvas.toDataURL("image/png");
+  const link = document.createElement("a");
+  link.href = imgData;
+  link.download = "minha-imagem.png";
+  link.click();
 
-avatarImage.addEventListener('change', event => {
-  
-  const reader = new FileReader;
-  reader.onload = function(event) {
-    
-    const previewImage = document.createElement('img');
-  previewImage.id = 'preview-image';
-  previewImage.width = 270;
-  previewImage.height = 480;
-  previewImage.src = event.target.result;
-  h2Avatar.insertAdjacentElement('afterend', previewImage);
-  }
-  reader.readAsDataURL(avatarImage.files[0]);
-  
-
-})
-
-function del() {
-document.getElementById('preview-image')
-.remove();
 }
