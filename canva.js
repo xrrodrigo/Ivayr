@@ -7,7 +7,7 @@ function drawnImage() {
   img1.src = URL.createObjectURL(arquivo.files[0]);
 
   var img2 = new Image();
-  img2.src = '/img/canvaimage.png';
+  img2.src = './canvaimage.png';
 
   img1.onload = function() {
     context.drawImage(img1, 0, 0, canvas.width, canvas.height);
