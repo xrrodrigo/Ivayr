@@ -10,10 +10,11 @@ function drawnImage() {
   img2.src = './canvaimage.png';
 
   img1.onload = function() {
-    context.globalCompositeOperation = 'destination-over';
     context.drawImage(img1, 0, 0, canvas.width, canvas.height);
+  };
+
+  img2.onload = function() {
     context.drawImage(img2, 0, 0, canvas.width, canvas.height);
   };
 }
-
 drawnImage();
