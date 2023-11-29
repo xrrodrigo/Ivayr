@@ -6,14 +6,16 @@ function drawnImage() {
   var img1 = new Image();
   img1.src = URL.createObjectURL(arquivo.files[0]);
 
-  img1.onload = function() {
-    var img2 = new Image();
-    img2.src = './canvaimage.png';
+  var img2 = new Image();
+  img2.src = './canvaimage.png';
 
-    img2.onload = function() {
-      context.drawImage(img2, 0, 0, canvas.width, canvas.height);
-      context.drawImage(img1, 0, 0, canvas.width, canvas.height);
-    };
+  img1.onload = function() {
+    context.drawImage(img1, 0, 0, canvas.width, canvas.height);
+  };
+
+  img2.onload = function() {
+    context.drawImage(img2, 0, 0, canvas.width, canvas.height);
   };
 }
+
 drawnImage();
