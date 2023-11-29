@@ -17,15 +17,13 @@
         />
         <h1 class="desc">Envie sua foto</h1>
         </label>
-        <input type='file' oninput="desenharImagens()" name='file' id='arquivo'></input>
+        <input type='file' oninput="drawnImage()" name='file' id='arquivo'></input>
         </form>
-        <button class="delete" onclick="del()"><img src="/img/trash.svg" alt="Lixo"><h1 class="desc">Apagar foto</h1></button>
-        <button onclick="download()" >asdads</button>
-      </aside>
+         <button class="downloadBtn" onclick="download(event)"><img src="/img/download.svg" alt="Baixar"><h1 class="desc">Baixar Imagem</h1></button>
+     </aside>
       <div class='preview'>
         <h2 class="title" id="h2-avatar">Sua foto ficará assim</h2>
-        <canvas id="canvas" width="270" height="480" style="border:1px solid grey;"></canvas>
-        <img class="disable" id="bannerimg" src="/img/canvaimage.png" height="480" width="270">
+        <canvas id="canvas" width="270" height="480"></canvas>
       </div>
 <script src="/canva.js"></script>
 <script src="/index.js"></script>
