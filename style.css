@@ -38,7 +38,7 @@ justify-content: center;
 flex-direction: column;
 width: 250px;
 height: 150px;
-border: 1px #949494 dashed;
+border: 2px #949494 dashed;
 border-radius: 12px;
 }
 label:hover
@@ -56,26 +56,30 @@ flex-direction: column;
 {
 width: 100px;
 }
-.delete
+.downloadBtn
 {
-    border: 1px dashed #FE2D2D;
     background: none;
-    width: 125px;
-    height: 125px;
-    border-radius: 12px;
-    color: #FE2D2D;
-    font-size: 12px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 197px;
+    height: 57px;
+    border-radius: 11px;
     align-items: center;
-    justify-content: center;
-    margin-top: 110px;
+    border: 2px dashed #949494;
+    justify-content: space-evenly;
+    color: #949494;
+    margin-top: 170px;
 }
-.delete:hover
+.downloadBtn h1
+{
+    font-size: 17px;
+    font-weight: 600;
+}
+.downloadBtn:hover
 {
 cursor: pointer;
 }
-.disable
+canvas
 {
-display: none;
+border:1px solid #888;
 }

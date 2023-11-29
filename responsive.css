@@ -21,11 +21,11 @@
     {
     font-size: 16px;
     }
-    .delete
+    .downloadBtn
     {
         width: 75px;
         height: 75px;
-        border: solid 1px #FE2D2D;
+        border: solid 1px #949494;
     }
     .preview
     {
