@@ -17,5 +17,4 @@ function drawnImage() {
     context.drawImage(img2, 0, 0, canvas.width, canvas.height);
   };
 }
-
 drawnImage();
