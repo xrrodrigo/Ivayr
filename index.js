@@ -1,17 +1,21 @@
+let imageCount = 0; // Contador para as imagens
+
 function download(event) {
-  event.preventDefault();
+    event.preventDefault();
+  
+    canvas.toBlob(
+        blob => {
+            const anchor = window.document.createElement('a');
+            anchor.href = window.URL.createObjectURL(blob);
+            anchor.download = 'ivayr.jpg';
+            anchor.click();
+            window.URL.revokeObjectURL(anchor.href);
+            
+            
+        },
+        'image/jpeg',
+        1.0,
+    );
 
-  canvas.toBlob(
-      blob => {
-          const anchor = window.document.createElement('a');
-          anchor.href = window.URL.createObjectURL(blob);
-          anchor.download = 'ivayr.jpg';
-          anchor.click();
-          window.URL.revokeObjectURL(anchor.href);
-
-      },
-      'image/jpeg',
-      0.9,
-  );
-  location.reload()
+   // location.reload()
 }
