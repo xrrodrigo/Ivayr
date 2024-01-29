@@ -1,6 +1,7 @@
 *
 {
-font-family: sans-serif;
+font-family: 'iCiel Gotham', sans-serif;                                  
+font-weight: 400;                                              
 top: 0;
 left: 0;
 right: 0;
@@ -18,7 +19,6 @@ display: flex;
 align-items: center;
 flex-direction: column;
 color: #949494;
-font-weight: 600;
 border-right: 1px solid #949494;
 padding-top: 30px;
 }
@@ -28,7 +28,7 @@ display: none;
 }
 label
 {
-margin-top: 50px;
+margin-top: 25px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -51,7 +51,7 @@ flex-direction: column;
 }
 .logo
 {
-width: 100px;
+width: 165px;
 }
 .downloadBtn
 {
@@ -65,12 +65,11 @@ width: 100px;
     border: 2px dashed #949494;
     justify-content: space-evenly;
     color: #949494;
-    margin-top: 170px;
+    margin-top: 140px;
 }
 .downloadBtn h1
 {
     font-size: 17px;
-    font-weight: 600;
 }
 .downloadBtn:hover
 {
@@ -85,4 +84,41 @@ height:480px;
 .cam
 {
 width: 60px;
+}
+.popup
+{
+color: #000;
+background: #fff;
+width: 600px;
+height: 350px;
+position: fixed;
+left: auto;
+right: auto;
+top: auto;
+bottom: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 12px;
+box-shadow: 0px 1px 30px 14px #81818188;
+}
+.successDownload
+{
+    font-size: 2.7rem;
+    margin-bottom: 5px;
+}
+.successSubtitle
+{
+font-family: 'Inter', sans-serif;
+font-weight: 200;
+font-size: 1.8rem;
+text-align: center;
+margin-top: 0;                                      
+}
+.successShare
+{
+font-family: 'Inter', sans-serif;
+font-weight: 200;
+font-size: 1.8rem;
+margin-top: 41px;
 }
