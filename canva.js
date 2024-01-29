@@ -11,7 +11,7 @@ function drawnImage() {
 
     img1.onload = null; 
     
-    img1.src = './canvaimage.png'; 
+    img1.src = './canvaimage.svg'; 
 
     img1.onload = function() {
       context.drawImage(img1, 0, 0, canvas.width, canvas.height);
