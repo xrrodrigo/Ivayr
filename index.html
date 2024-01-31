@@ -63,16 +63,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </label>
         <input type='file' oninput="drawnImage()" name='file' id='arquivo'></input>
         </form>
-         <button class="downloadBtn" onclick="download(event)"><img src="./download.svg" alt="Baixar"><h1 class="desc">Baixar Imagem</h1></button>
+         <button class="downloadBtn" onclick="download(event)"><img src="./download.svg" alt="Baixar imagem"><h1 class="desc">Baixar Imagem</h1></button>
      </aside>
       <div class='preview'>
         <h2 class="title" id="h2-avatar">Sua foto ficará assim</h2>
         <canvas id="canvas" width="1080" height="1920"></canvas>
         <div id="popup" class="popup">
+          <button class="closeBtn" onclick="closeBtn()"><img class="closeImg" src="./x.svg" alt="Fechar"></button>
           <h1 class="successDownload">Download concluído!</h1>
-          <h1 class="successSubtitle">Sua foto personalizada foi</br>baixada com sucesso</h1>
+          <h1 class="successSubtitle">Sua foto personalizada já</br>está na sua galeria</h1>
           <h1 class="successShare">Compartilhe</h1>
-          <button onclick="callShare()">Teste</button>
+          <button class="share" onclick="callShare()"><img src="./share.svg" alt="Compartilhe"></button>
         </div>
       </div>
 <script src="./canva.js"></script>
