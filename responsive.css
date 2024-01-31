@@ -57,4 +57,13 @@
     {
     width: 35px;
     }
+    .preview
+    {
+        position: absolute;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        margin-left: 100px;
+    }
 }
