@@ -9,3 +9,9 @@ function callShare() {
         navigator.share(data);
     }else{}
 }
+
+function closeBtn() {
+    const closeButton = document.getElementById("popup");
+    closeButton.style.display = "none";
+ }
+ 
