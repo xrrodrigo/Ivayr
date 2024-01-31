@@ -1,4 +1,4 @@
-@media (width < 480px){
+@media (width < 900px){
     aside{
         width: 95px;
     }
@@ -27,8 +27,34 @@
         height: 75px;
         border: solid 1px #949494;
     }
-    .preview
+    .popup
     {
-        padding-left: 95px;
+        width: 325px;
+        height: 230px;
+    }
+    .successSubtitle
+    {
+        font-size: 1.2rem;
+    }
+    .successDownload
+    {
+        font-size: 1.5rem
+    }
+    .closeImg
+    {
+    width: 25px;
+    }
+    .closeBtn
+    {
+    right: 0.1rem
+    }
+    .successShare
+    {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    }
+    .share img
+    {
+    width: 35px;
     }
 }
