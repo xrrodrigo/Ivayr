@@ -10,12 +10,9 @@ function download(event) {
             anchor.download = 'ivayr.jpg';
             anchor.click();
             window.URL.revokeObjectURL(anchor.href);
-            
-            const openPopup = document.getElementById("popup");
-            openPopup.style.display = "flex";     
-        },
+            },
         'image/jpeg',
         1.0,
     );     
-
+    location.reload()
     }
