@@ -26,25 +26,24 @@
      <!-- META TAGS SEO -->
 
     <meta name="title" content="Ivayr Soalheiro" />
-    <meta name="description" content="Gere fotos de apoio ao Ivayr Soalheiro com sua foto" />
+    <meta name="description" content="Crie uma foto de perfil personalizada com seu nome" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://xrrodrigo.github.io/Ivayr/" />
     <meta property="og:title" content="Ivayr Soalheiro" />
-    <meta property="og:description" content="Gere fotos de apoio ao Ivayr Soalheiro com sua foto" />
+    <meta property="og:description" content="Crie uma foto de perfil personalizada com seu nome" />
     <meta property="og:image" content="./seoimg.jpg" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://xrrodrigo.github.io/Ivayr/" />
     <meta property="twitter:title" content="Ivayr Soalheiro" />
-    <meta property="twitter:description" content="Gere fotos de apoio ao Ivayr Soalheiro com sua foto" />
+    <meta property="twitter:description" content="Crie uma foto de perfil personalizada com seu nome" />
     <meta property="twitter:image" content="./seoimg.jpg" />
     
     <meta name="robots" content="index, follow">
     <!-- META TAGS SEO -->
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="canva.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -55,22 +54,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <aside>
         <img src="./logo.png" alt="Ivayr Soalheiro" class="logo"/>
-        <form enctype="multipart/form-data">
-        <label for="arquivo">
-        <img src="./cam.svg" alt="envie sua imagem" class="cam"
-        />
-        <h1 class="desc">Envie sua foto</h1>
-        </label>
-        <input type='file' oninput="drawnImage()" name='file' id='arquivo'></input>
-        </form>
-         <button class="downloadBtn" onclick="download(event)"><img src="./download.svg" alt="Baixar imagem"><h1 class="desc">Baixar Imagem</h1></button>
-     </aside>
-      <div class='preview'>
-        <h2 class="title" id="h2-avatar">Sua foto ficará assim</h2>
-        <canvas id="canvas" width="1080" height="1920"></canvas>
-      </div>
-<script src="./canva.js"></script>
-<script src="./index.js"></script>
-<script src="./localstorage.js"></script>
+    </aside>
+    <div class="container" id="ctnr">
+    <div id="canva" class="canva"></div>
+    <div class="options" id="options">
+        <div class="main">
+    <h1>Tamanhos do card</h1>
+    <div class="horizontal">
+    <button class="wppBtn" onclick="whatsapp()"><img src="/whatsapp.svg" alt="logo whatsapp">Foto de perfil WhatsApp</button>
+    <button onclick="instagram()"><img src="/instagram.svg" alt="logo instagram">Foto de perfil Instagram</button>
+    </div>
+    </div>
+    <div class="custom">
+    <h1>Tamanhos do personalizados</h1>
+    <div class="horizontal">
+
+        <input class="inputI" type="number" required name="width" id="inputI" placeholder="Largura">
+        <input class="input2" type="number" required name="height" id="inputII" placeholder="Altura">
+        <input type="submit" onclick="custom()">
+
+</div>
+    </div>
+</div>
+<script src="./card.js"></script>
 </body>
 </html>
