@@ -1,0 +1,32 @@
+*
+{
+font-family: 'iCiel Gotham', sans-serif;                                  
+font-weight: 400;                                              
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+aside
+{
+margin-top: 20px;
+margin-bottom: 20px;
+float: left;
+background: #fff;
+width: 199px;
+position: fixed;
+display: flex;
+align-items: center;
+flex-direction: column;
+color: #0969DA;
+border-right: 1px solid #656D76;
+padding-top: 30px;
+}
+.logo
+{
+width: 150px;
+}
+.container
+{
+margin-left: 200px;
+}
