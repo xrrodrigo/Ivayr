@@ -30,3 +30,16 @@ width: 150px;
 {
 margin-left: 200px;
 }
+.opt1
+{
+width: 330px;
+height: 180px;
+border: 1px solid #656D76;
+color: #0969DA;
+border-radius: 45px;
+display: flex;
+}
+.opt1:hover
+{
+border: 1px solid #0969DA;
+}
